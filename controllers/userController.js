@@ -68,7 +68,7 @@ const loginUser = asyncHandler(async (req,res)=>{
         process.env.ACCESS_TOKEN_SECERT,
         {expiresIn:"1m"}
         )
-        console.log(accessToken);
+        console.log("accessToken : ",accessToken);
         res.status(200).json({accessToken});
         
      }else{
@@ -82,7 +82,7 @@ const loginUser = asyncHandler(async (req,res)=>{
 // @route GET/api/user/current
 // @access private 
 const currentUser = asyncHandler(async (req,res)=>{
-    res.json({message:"inside register api"});
+    res.json(req.user);
 });
 
 
