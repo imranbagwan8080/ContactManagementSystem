@@ -1,10 +1,9 @@
-////mongodb+srv://Imran8080:Imran@8080@imrancluster.pfncp7d.mongodb.net/mycontacts-backend?retryWrites=true&w=majority
+
 
 const mongoose = require("mongoose");
 
 //require('dotenv').config();
 
-const connectionString = "mongodb+srv://imran:imran@imrancluster.zq4k6q4.mongodb.net/mycontacts-backend?retryWrites=true&w=majority"
 
 const connectDb = async() =>{
      try{
